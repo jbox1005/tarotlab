@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140818"/>
+      <stop offset="1" stop-color="#2a0a10"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#g)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#d4a847" stroke-width="0.8"/>
+  <!-- 생명의 씨앗(Seed of Life) 패턴 -->
+  <g transform="translate(50 80)" fill="none" stroke="#d4a847" stroke-width="0.6" opacity="0.85">
+    <circle r="14"/>
+    <circle cx="0" cy="-14" r="14"/>
+    <circle cx="12.12" cy="-7" r="14"/>
+    <circle cx="12.12" cy="7" r="14"/>
+    <circle cx="0" cy="14" r="14"/>
+    <circle cx="-12.12" cy="7" r="14"/>
+    <circle cx="-12.12" cy="-7" r="14"/>
+  </g>
+  <!-- 외곽 팔각별 -->
+  <g transform="translate(50 80)" fill="none" stroke="#d4a847" stroke-width="0.5" opacity="0.55">
+    <path d="M0 -34 L10 -10 L34 0 L10 10 L0 34 L-10 10 L-34 0 L-10 -10 Z"/>
+    <path d="M0 -34 L34 0 L0 34 L-34 0 Z" transform="rotate(45)"/>
+  </g>
+</svg>
