@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#142454"/>
+      <stop offset="1" stop-color="#050e22"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#bg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#c8e8f4" stroke-width="0.8"/>
+  <rect x="7" y="7" width="86" height="146" rx="3" fill="none" stroke="#c8e8f4" stroke-width="0.3" opacity="0.5"/>
+  <!-- 흩어진 별 -->
+  <g fill="#c8e8f4">
+    <circle cx="18" cy="22" r="0.8" opacity="0.7"/>
+    <circle cx="82" cy="18" r="1.0" opacity="0.85"/>
+    <circle cx="68" cy="34" r="0.6" opacity="0.5"/>
+    <circle cx="14" cy="48" r="0.7" opacity="0.6"/>
+    <circle cx="86" cy="58" r="0.9" opacity="0.7"/>
+    <circle cx="22" cy="120" r="0.8" opacity="0.6"/>
+    <circle cx="78" cy="118" r="1.0" opacity="0.8"/>
+    <circle cx="42" cy="140" r="0.6" opacity="0.5"/>
+    <circle cx="58" cy="142" r="0.7" opacity="0.6"/>
+    <circle cx="32" cy="22" r="0.5" opacity="0.4"/>
+    <circle cx="72" cy="100" r="0.7" opacity="0.55"/>
+  </g>
+  <!-- 큰 십자별 -->
+  <g transform="translate(28 36)" fill="#c8e8f4" opacity="0.85">
+    <path d="M 0 -4 L 0.6 -0.6 L 4 0 L 0.6 0.6 L 0 4 L -0.6 0.6 L -4 0 L -0.6 -0.6 Z"/>
+  </g>
+  <g transform="translate(74 134)" fill="#c8e8f4" opacity="0.85">
+    <path d="M 0 -3 L 0.5 -0.5 L 3 0 L 0.5 0.5 L 0 3 L -0.5 0.5 L -3 0 L -0.5 -0.5 Z"/>
+  </g>
+  <!-- 초승달 -->
+  <g transform="translate(50 80)">
+    <circle r="22" fill="#c8e8f4" opacity="0.12"/>
+    <circle r="18" fill="#c8e8f4"/>
+    <circle cx="6" r="17" fill="#050e22"/>
+    <!-- 별 별 -->
+    <g fill="#5fc4e0">
+      <circle cx="-4" cy="-2" r="0.6"/>
+      <circle cx="-8" cy="2" r="0.4"/>
+      <circle cx="-2" cy="6" r="0.5"/>
+    </g>
+  </g>
+</svg>

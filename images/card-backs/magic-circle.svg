@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#1a0c2a"/>
+      <stop offset="1" stop-color="#0a0414"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#bg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#9b6bd4" stroke-width="0.8"/>
+  <rect x="7" y="7" width="86" height="146" rx="3" fill="none" stroke="#9b6bd4" stroke-width="0.3" opacity="0.5"/>
+  <g transform="translate(50 80)" stroke="#c8a8e8" stroke-width="0.6" fill="none">
+    <circle r="34" opacity="0.9"/>
+    <circle r="28" opacity="0.6"/>
+    <circle r="20" opacity="0.7"/>
+    <!-- 5각성 -->
+    <path d="M 0 -22 L 13 14 L -18 -8 L 18 -8 L -13 14 Z" stroke-width="0.8" opacity="0.95"/>
+    <!-- 룬 자리 표시 -->
+    <g opacity="0.7">
+      <circle cx="0" cy="-30" r="1.4" fill="#c8a8e8"/>
+      <circle cx="28.5" cy="-9.3" r="1.4" fill="#c8a8e8"/>
+      <circle cx="17.6" cy="24.3" r="1.4" fill="#c8a8e8"/>
+      <circle cx="-17.6" cy="24.3" r="1.4" fill="#c8a8e8"/>
+      <circle cx="-28.5" cy="-9.3" r="1.4" fill="#c8a8e8"/>
+    </g>
+  </g>
+  <!-- 모서리 룬 -->
+  <g fill="#c8a8e8" opacity="0.6" font-family="serif" font-size="6">
+    <text x="14" y="22">✶</text>
+    <text x="80" y="22">✶</text>
+    <text x="14" y="142">✶</text>
+    <text x="80" y="142">✶</text>
+  </g>
+</svg>
