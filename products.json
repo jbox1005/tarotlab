@@ -1,6 +1,7 @@
 {
-  "version": 2,
-  "updatedAt": "2026-04-25T10:22:25.143Z",
+  "version": 10,
+  "updatedAt": "2026-04-27T02:05:23.045Z",
+  "schema": "stage:1=resource-only / 2=public(not for sale) / 3=for sale",
   "THEMES": [
     {
       "id": "tarolab",
@@ -11,7 +12,6 @@
         "#f0d040"
       ],
       "free": true,
-      "available": false,
       "price": 0
     },
     {
@@ -23,7 +23,6 @@
         "#e4c574"
       ],
       "free": true,
-      "available": false,
       "price": 0
     },
     {
@@ -35,7 +34,6 @@
         "#c9a656"
       ],
       "free": true,
-      "available": false,
       "price": 0
     },
     {
@@ -46,7 +44,7 @@
         "#6a8dff",
         "#9fc5ff"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -57,7 +55,7 @@
         "#c94a5a",
         "#d4a847"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -68,7 +66,7 @@
         "#d4af37",
         "#f5d57c"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -79,7 +77,7 @@
         "#d47a9c",
         "#e8b478"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -90,7 +88,7 @@
         "#7b3f99",
         "#b08530"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -101,7 +99,7 @@
         "#c8b4ff",
         "#d4d8e0"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -112,7 +110,7 @@
         "#5fc4e0",
         "#c8e8f4"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -123,7 +121,7 @@
         "#e85d2e",
         "#ffd060"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -134,7 +132,7 @@
         "#a87538",
         "#d4b070"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -145,7 +143,7 @@
         "#a098c8",
         "#e0d8f4"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -156,7 +154,7 @@
         "#9b6bd4",
         "#e8c060"
       ],
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
@@ -167,7 +165,40 @@
         "#3ed0a8",
         "#d860c4"
       ],
-      "available": true,
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "noir-gold",
+      "name": "누아르 골드",
+      "swatches": [
+        "#050505",
+        "#d4af37",
+        "#f0c860"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "burgundy-wine",
+      "name": "버건디 와인",
+      "swatches": [
+        "#1a070c",
+        "#b8585f",
+        "#e8b478"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "sage-cottage",
+      "name": "세이지 코지",
+      "swatches": [
+        "#14180e",
+        "#8aab78",
+        "#e8d5a8"
+      ],
+      "stage": 1,
       "price": 1900
     }
   ],
@@ -176,93 +207,138 @@
       "id": "tarolab",
       "name": "타로랩",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
       "id": "classic",
       "name": "클래식",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
       "id": "emerald",
       "name": "에메랄드",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
       "id": "starry",
       "name": "별밤",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "geometric",
       "name": "생명의 씨앗",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "simple",
       "name": "심플",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "eye-of-sun",
       "name": "태양의 눈",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "magic-circle",
       "name": "마법진",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "moon-stars",
       "name": "달과 별",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "rose-window",
       "name": "장미창",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "runes",
       "name": "룬 문자",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "lotus",
       "name": "연꽃",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "feathers",
       "name": "천사의 깃털",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "spiral",
       "name": "나선 미궁",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "aztec-sun",
       "name": "아즈텍 태양석",
-      "available": true,
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "flower-of-life",
+      "name": "생명의 꽃",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "compass-rose",
+      "name": "컴퍼스 로즈",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "mandala",
+      "name": "만달라",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "constellation-map",
+      "name": "별자리 지도",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "eye-of-horus",
+      "name": "호루스의 눈",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "damask",
+      "name": "다마스크",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "holographic",
+      "name": "홀로그래픽",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "watercolor",
+      "name": "워터컬러",
+      "stage": 1,
       "price": 1500
     }
   ],
@@ -272,7 +348,6 @@
       "name": "없음",
       "group": "basic",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
@@ -280,7 +355,6 @@
       "name": "도트",
       "group": "pattern",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
@@ -288,154 +362,153 @@
       "name": "격자",
       "group": "pattern",
       "free": true,
-      "available": true,
       "price": 0
     },
     {
       "id": "dots-large",
       "name": "큰 도트",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "twinkle",
       "name": "별빛",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "constellation",
       "name": "별자리",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "moon",
       "name": "초승달",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "diamond",
       "name": "다이아몬드",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "hexagon",
       "name": "벌집",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "triangles",
       "name": "삼각 만화경",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "ripple",
       "name": "동심원",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "herringbone",
       "name": "헤링본",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "runes",
       "name": "룬 문자",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "cross",
       "name": "십자",
       "group": "pattern",
-      "available": true,
+      "stage": 1,
       "price": 1500
     },
     {
       "id": "aurora",
       "name": "오로라",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "nebula",
       "name": "성운",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "eclipse",
       "name": "일식",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "galaxy",
       "name": "은하수",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "fog",
       "name": "안개",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "sacred-circle",
       "name": "성원",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "twilight",
       "name": "여명",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "prism",
       "name": "프리즘",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "abyss",
       "name": "심연",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     },
     {
       "id": "binary-star",
       "name": "쌍성",
       "group": "mood",
-      "available": true,
+      "stage": 1,
       "price": 1900
     }
   ]
