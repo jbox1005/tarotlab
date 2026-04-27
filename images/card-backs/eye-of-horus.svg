@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#1a1208"/>
+      <stop offset="1" stop-color="#0a0604"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#bg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#d4af37" stroke-width="0.8"/>
+  <rect x="7" y="7" width="86" height="146" rx="3" fill="none" stroke="#d4af37" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- 상단 작은 햇살 (아텐) -->
+  <g transform="translate(50 30)" stroke="#d4af37" stroke-width="0.4" opacity="0.6" fill="none">
+    <circle r="4"/>
+    <line x1="0" y1="-7" x2="0" y2="-9"/>
+    <line x1="0" y1="7" x2="0" y2="9"/>
+    <line x1="-7" y1="0" x2="-9" y2="0"/>
+    <line x1="7" y1="0" x2="9" y2="0"/>
+    <line x1="-5" y1="-5" x2="-6.5" y2="-6.5"/>
+    <line x1="5" y1="-5" x2="6.5" y2="-6.5"/>
+    <line x1="-5" y1="5" x2="-6.5" y2="6.5"/>
+    <line x1="5" y1="5" x2="6.5" y2="6.5"/>
+  </g>
+
+  <!-- 호루스의 눈 (양식화) -->
+  <g transform="translate(50 78)">
+    <!-- 눈썹 -->
+    <path d="M -28 -16 Q -10 -24 18 -18 L 18 -14 Q -8 -19 -28 -12 Z" fill="#d4af37" opacity="0.9"/>
+
+    <!-- 눈 외곽 -->
+    <path d="M -26 0 Q -15 -10 8 -8 Q 18 -6 24 0 Q 18 8 8 10 Q -10 12 -26 0 Z"
+          fill="none" stroke="#d4af37" stroke-width="1.2"/>
+
+    <!-- 눈 내부 (홍채) -->
+    <ellipse cx="-2" cy="0" rx="6" ry="6.5" fill="#d4af37"/>
+    <circle cx="-2" cy="0" r="3" fill="#0a0604"/>
+    <!-- 눈동자 광 -->
+    <circle cx="-3" cy="-1.2" r="1" fill="#f5d57c"/>
+
+    <!-- 호루스 눈 특유의 아래 곡선 (눈물 자국) -->
+    <path d="M -2 8 Q 4 14 6 22" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+    <!-- 호루스 눈 특유의 안쪽 나선 -->
+    <path d="M -10 8 Q -14 14 -22 14 Q -28 12 -28 6" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+  </g>
+
+  <!-- 하단 양쪽 작은 윙 장식 -->
+  <g fill="#d4af37" opacity="0.65">
+    <path d="M 22 132 Q 30 128 42 132 L 42 134 Q 30 130 22 134 Z"/>
+    <path d="M 78 132 Q 70 128 58 132 L 58 134 Q 70 130 78 134 Z"/>
+  </g>
+
+  <!-- 하단 중앙 앙크 또는 작은 별 -->
+  <g transform="translate(50 142)" fill="#d4af37" opacity="0.7">
+    <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z"/>
+  </g>
+</svg>
