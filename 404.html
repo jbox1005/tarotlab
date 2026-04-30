@@ -16,19 +16,14 @@
 
     <title>타로랩 TarotLab</title>
 
-    <!-- iOS PWA 첫 실행 시 WKWebView 가 viewport meta 처리 전에 잘못된 스케일로 첫 paint 하는 현상 방지.
-         body 를 opacity 0 으로 시작 → React 마운트 + rAF 1회 후 main.jsx 가 클래스 제거 → fade-in.
-         theme-color 단색 배경으로 가려 깜빡임 자체를 안 보이게. -->
     <style>
       html { background-color: #17213d; }
       html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-      body.app-pre-mount { opacity: 0; }
-      body { transition: opacity 0.5s ease-out; }
     </style>
-    <script type="module" crossorigin src="/tarotlab/assets/index-ozRL_HKp.js"></script>
-    <link rel="stylesheet" crossorigin href="/tarotlab/assets/index-D3u7FJyt.css">
+    <script type="module" crossorigin src="/tarotlab/assets/index-x5ayQoyg.js"></script>
+    <link rel="stylesheet" crossorigin href="/tarotlab/assets/index-aP7px78w.css">
   <link rel="manifest" href="/tarotlab/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/tarotlab/registerSW.js"></script></head>
-  <body class="app-pre-mount">
+  <body>
     <div id="root"></div>
   </body>
 </html>
