@@ -23,7 +23,15 @@
 
     { "id": "noir-gold",     "name": "누아르 골드", "swatches": ["#050505", "#d4af37", "#f0c860"], "stage": 1, "price": 1900 },
     { "id": "burgundy-wine", "name": "버건디 와인", "swatches": ["#1a070c", "#b8585f", "#e8b478"], "stage": 1, "price": 1900 },
-    { "id": "sage-cottage",  "name": "세이지 코지", "swatches": ["#14180e", "#8aab78", "#e8d5a8"], "stage": 1, "price": 1900 }
+    { "id": "sage-cottage",  "name": "세이지 코지", "swatches": ["#14180e", "#8aab78", "#e8d5a8"], "stage": 1, "price": 1900 },
+
+    { "id": "dancheong",       "name": "단청",          "swatches": ["#1a1410", "#c83e3e", "#e8b840"], "stage": 1, "price": 1900 },
+    { "id": "plum-moon",       "name": "매화 달밤",     "swatches": ["#161922", "#d88aa0", "#e0d4c0"], "stage": 1, "price": 1900 },
+    { "id": "winter-stardust", "name": "겨울 별바다",   "swatches": ["#0e1428", "#88b8e0", "#d8e4f4"], "stage": 1, "price": 1900 },
+    { "id": "autumn-harvest",  "name": "가을 추수",     "swatches": ["#200e0c", "#c87038", "#e8b048"], "stage": 1, "price": 1900 },
+    { "id": "deep-sea",        "name": "바다 심연",     "swatches": ["#0a1e2c", "#3eaab8", "#f48a78"], "stage": 1, "price": 1900 },
+    { "id": "cherry-dawn",     "name": "벚꽃 새벽",     "swatches": ["#fdf6f7", "#d870a0", "#c89858"], "stage": 1, "price": 1900 },
+    { "id": "emerald-garden",  "name": "에메랄드 정원", "swatches": ["#0a2014", "#4ea868", "#d8c068"], "stage": 1, "price": 1900 }
   ],
   "CARD_BACKS": [
     { "id": "tarolab", "name": "타로랩",   "free": true, "price": 0 },
@@ -51,7 +59,17 @@
     { "id": "eye-of-horus",      "name": "호루스의 눈", "stage": 1, "price": 1500 },
     { "id": "damask",            "name": "다마스크",    "stage": 1, "price": 1500 },
     { "id": "holographic",       "name": "홀로그래픽",  "stage": 1, "price": 1500 },
-    { "id": "watercolor",        "name": "워터컬러",    "stage": 1, "price": 1500 }
+    { "id": "watercolor",        "name": "워터컬러",    "stage": 1, "price": 1500 },
+
+    { "id": "dancheong",     "name": "단청",        "stage": 1, "price": 1500 },
+    { "id": "plum-blossom",  "name": "매화 달밤",   "stage": 1, "price": 1500 },
+    { "id": "yin-yang",      "name": "음양 사상",   "stage": 1, "price": 1500 },
+    { "id": "bagua",         "name": "주역 팔괘",   "stage": 1, "price": 1500 },
+    { "id": "celtic-knot",   "name": "켈틱 매듭",   "stage": 1, "price": 1500 },
+    { "id": "zodiac-wheel",  "name": "황도 12궁",   "stage": 1, "price": 1500 },
+    { "id": "moon-cycle",    "name": "달의 위상",   "stage": 1, "price": 1500 },
+    { "id": "kabbalah-tree", "name": "생명나무",    "stage": 1, "price": 1500 },
+    { "id": "scarab",        "name": "풍뎅이 호부", "stage": 1, "price": 1500 }
   ],
   "PATTERNS": [
     { "id": "none",          "name": "없음",        "group": "basic",   "free": true, "price": 0 },

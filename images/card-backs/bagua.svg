@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1428"/>
+      <stop offset="1" stop-color="#06081a"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#bgg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#d4a847" stroke-width="0.6"/>
+
+  <!-- 8괘 — 원형 8방향 배치 -->
+  <g transform="translate(50, 80)" stroke="#d4a847" stroke-width="0.7" fill="none">
+    <circle r="34" stroke-width="0.5"/>
+    <circle r="28"/>
+    <circle r="14"/>
+  </g>
+
+  <!-- 8괘 표시 — 각 방향에 막대 패턴. 중심 거리 31 -->
+  <g transform="translate(50, 80)" fill="#d4a847">
+    <!-- 건 ☰ (위, 0도) — 3 실선 -->
+    <g transform="translate(0,-31) rotate(0)">
+      <rect x="-7" y="-3" width="14" height="1.2"/>
+      <rect x="-7" y="-0.6" width="14" height="1.2"/>
+      <rect x="-7" y="1.8" width="14" height="1.2"/>
+    </g>
+    <!-- 손 ☴ (북동, 45도) — 위 끊어짐 + 2 실선 -->
+    <g transform="rotate(45) translate(0,-31) rotate(-45)">
+      <rect x="-7" y="-3" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-3" width="5.5" height="1.2"/>
+      <rect x="-7" y="-0.6" width="14" height="1.2"/>
+      <rect x="-7" y="1.8" width="14" height="1.2"/>
+    </g>
+    <!-- 감 ☵ (우, 90도) — 가운데만 실선 -->
+    <g transform="rotate(90) translate(0,-31) rotate(-90)">
+      <rect x="-7" y="-3" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-3" width="5.5" height="1.2"/>
+      <rect x="-7" y="-0.6" width="14" height="1.2"/>
+      <rect x="-7" y="1.8" width="5.5" height="1.2"/>
+      <rect x="1.5" y="1.8" width="5.5" height="1.2"/>
+    </g>
+    <!-- 간 ☶ (남동, 135도) — 위만 실선, 아래 둘 끊어짐 -->
+    <g transform="rotate(135) translate(0,-31) rotate(-135)">
+      <rect x="-7" y="-3" width="14" height="1.2"/>
+      <rect x="-7" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="-7" y="1.8" width="5.5" height="1.2"/>
+      <rect x="1.5" y="1.8" width="5.5" height="1.2"/>
+    </g>
+    <!-- 곤 ☷ (아래, 180도) — 3 끊어진 -->
+    <g transform="rotate(180) translate(0,-31) rotate(-180)">
+      <rect x="-7" y="-3" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-3" width="5.5" height="1.2"/>
+      <rect x="-7" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="-7" y="1.8" width="5.5" height="1.2"/>
+      <rect x="1.5" y="1.8" width="5.5" height="1.2"/>
+    </g>
+    <!-- 진 ☳ (남서, 225도) — 아래만 실선 -->
+    <g transform="rotate(225) translate(0,-31) rotate(-225)">
+      <rect x="-7" y="-3" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-3" width="5.5" height="1.2"/>
+      <rect x="-7" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="-7" y="1.8" width="14" height="1.2"/>
+    </g>
+    <!-- 리 ☲ (좌, 270도) — 위·아래 실선, 가운데 끊어짐 -->
+    <g transform="rotate(270) translate(0,-31) rotate(-270)">
+      <rect x="-7" y="-3" width="14" height="1.2"/>
+      <rect x="-7" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-0.6" width="5.5" height="1.2"/>
+      <rect x="-7" y="1.8" width="14" height="1.2"/>
+    </g>
+    <!-- 태 ☱ (북서, 315도) — 위 끊어짐, 아래 둘 실선 -->
+    <g transform="rotate(315) translate(0,-31) rotate(-315)">
+      <rect x="-7" y="-3" width="5.5" height="1.2"/>
+      <rect x="1.5" y="-3" width="5.5" height="1.2"/>
+      <rect x="-7" y="-0.6" width="14" height="1.2"/>
+      <rect x="-7" y="1.8" width="14" height="1.2"/>
+    </g>
+  </g>
+
+  <!-- 중앙 작은 태극 -->
+  <g transform="translate(50, 80)">
+    <circle r="11" fill="#d4a847"/>
+    <path d="M0 -11 A11 11 0 0 1 0 11 A5.5 5.5 0 0 0 0 0 A5.5 5.5 0 0 1 0 -11 Z" fill="#06081a"/>
+    <circle cx="0" cy="-5.5" r="1.5" fill="#06081a"/>
+    <circle cx="0" cy="5.5" r="1.5" fill="#d4a847"/>
+  </g>
+</svg>

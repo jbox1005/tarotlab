@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="pmg" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#1e2030"/>
+      <stop offset="1" stop-color="#0a0c14"/>
+    </radialGradient>
+    <symbol id="plum" viewBox="-10 -10 20 20">
+      <g>
+        <ellipse cx="0" cy="-5" rx="3.5" ry="4" fill="#d88aa0"/>
+        <ellipse cx="4.8" cy="-1.5" rx="3.5" ry="4" fill="#d88aa0" transform="rotate(72 4.8 -1.5)"/>
+        <ellipse cx="3" cy="4" rx="3.5" ry="4" fill="#d88aa0" transform="rotate(144 3 4)"/>
+        <ellipse cx="-3" cy="4" rx="3.5" ry="4" fill="#d88aa0" transform="rotate(216 -3 4)"/>
+        <ellipse cx="-4.8" cy="-1.5" rx="3.5" ry="4" fill="#d88aa0" transform="rotate(288 -4.8 -1.5)"/>
+        <circle cx="0" cy="0" r="1.2" fill="#e8b840"/>
+        <g stroke="#e8b840" stroke-width="0.4">
+          <line x1="0" y1="0" x2="0" y2="-3"/>
+          <line x1="0" y1="0" x2="2.5" y2="-1"/>
+          <line x1="0" y1="0" x2="2" y2="2"/>
+          <line x1="0" y1="0" x2="-2" y2="2"/>
+          <line x1="0" y1="0" x2="-2.5" y2="-1"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+  <rect width="100" height="160" fill="url(#pmg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#e0d4c0" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- 달 -->
+  <circle cx="72" cy="32" r="14" fill="#e0d4c0" opacity="0.85"/>
+  <circle cx="69" cy="29" r="2" fill="#1e2030" opacity="0.3"/>
+  <circle cx="74" cy="35" r="1.4" fill="#1e2030" opacity="0.3"/>
+
+  <!-- 매화 가지 -->
+  <g stroke="#3a2820" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <path d="M14 142 Q22 120 28 100 Q32 80 38 60 Q44 44 56 30"/>
+    <path d="M28 100 Q22 92 14 88"/>
+    <path d="M38 60 Q46 56 54 58"/>
+    <path d="M44 44 Q40 36 32 30"/>
+  </g>
+
+  <!-- 매화 꽃 -->
+  <use href="#plum" x="38" y="50" width="16" height="16"/>
+  <use href="#plum" x="48" y="34" width="14" height="14"/>
+  <use href="#plum" x="22" y="78" width="14" height="14"/>
+  <use href="#plum" x="32" y="92" width="12" height="12"/>
+  <use href="#plum" x="20" y="118" width="13" height="13"/>
+  <use href="#plum" x="14" y="98" width="11" height="11"/>
+
+  <!-- 떨어지는 꽃잎 -->
+  <ellipse cx="68" cy="76" rx="2" ry="3" fill="#d88aa0" opacity="0.7" transform="rotate(35 68 76)"/>
+  <ellipse cx="78" cy="100" rx="2" ry="3" fill="#d88aa0" opacity="0.6" transform="rotate(-20 78 100)"/>
+  <ellipse cx="60" cy="130" rx="1.5" ry="2.5" fill="#d88aa0" opacity="0.55" transform="rotate(60 60 130)"/>
+</svg>

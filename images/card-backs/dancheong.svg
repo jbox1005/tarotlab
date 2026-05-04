@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="dcg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0e08"/>
+      <stop offset="1" stop-color="#0e0604"/>
+    </linearGradient>
+    <pattern id="dcp" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="0.6" fill="#e8b840" opacity="0.18"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="160" fill="url(#dcg)"/>
+  <rect x="3" y="3" width="94" height="154" rx="4" fill="none" stroke="#c83e3e" stroke-width="1.2"/>
+  <rect x="6" y="6" width="88" height="148" rx="3" fill="none" stroke="#e8b840" stroke-width="0.6"/>
+  <rect x="8" y="8" width="84" height="144" rx="2" fill="url(#dcp)"/>
+
+  <!-- 단청 머리초 — 상단 -->
+  <g transform="translate(50, 22)">
+    <path d="M-22 0 Q-22 -10 -10 -10 Q0 -10 0 0 Q0 -10 10 -10 Q22 -10 22 0 L22 6 L-22 6 Z" fill="#c83e3e" opacity="0.85"/>
+    <path d="M-18 -4 Q-12 -8 -6 -4 Q0 0 6 -4 Q12 -8 18 -4" fill="none" stroke="#e8b840" stroke-width="0.8"/>
+    <circle cx="0" cy="-2" r="2" fill="#e8b840"/>
+    <circle cx="-12" cy="-2" r="1.4" fill="#3a78c8"/>
+    <circle cx="12" cy="-2" r="1.4" fill="#3a78c8"/>
+  </g>
+
+  <!-- 중앙 연꽃 머리초 -->
+  <g transform="translate(50, 80)">
+    <!-- 외곽 원 -->
+    <circle r="26" fill="none" stroke="#e8b840" stroke-width="0.6"/>
+    <circle r="22" fill="none" stroke="#c83e3e" stroke-width="0.4"/>
+    <!-- 연잎 8개 -->
+    <g fill="#c83e3e" opacity="0.85">
+      <ellipse cx="0" cy="-18" rx="4" ry="9"/>
+      <ellipse cx="0" cy="18" rx="4" ry="9"/>
+      <ellipse cx="-18" cy="0" rx="9" ry="4"/>
+      <ellipse cx="18" cy="0" rx="9" ry="4"/>
+    </g>
+    <g fill="#3a78c8" opacity="0.75" transform="rotate(45)">
+      <ellipse cx="0" cy="-18" rx="3.5" ry="8"/>
+      <ellipse cx="0" cy="18" rx="3.5" ry="8"/>
+      <ellipse cx="-18" cy="0" rx="8" ry="3.5"/>
+      <ellipse cx="18" cy="0" rx="8" ry="3.5"/>
+    </g>
+    <!-- 중앙 -->
+    <circle r="5" fill="#e8b840"/>
+    <circle r="2" fill="#1a0e08"/>
+  </g>
+
+  <!-- 단청 머리초 — 하단 -->
+  <g transform="translate(50, 138) rotate(180)">
+    <path d="M-22 0 Q-22 -10 -10 -10 Q0 -10 0 0 Q0 -10 10 -10 Q22 -10 22 0 L22 6 L-22 6 Z" fill="#c83e3e" opacity="0.85"/>
+    <path d="M-18 -4 Q-12 -8 -6 -4 Q0 0 6 -4 Q12 -8 18 -4" fill="none" stroke="#e8b840" stroke-width="0.8"/>
+    <circle cx="0" cy="-2" r="2" fill="#e8b840"/>
+    <circle cx="-12" cy="-2" r="1.4" fill="#3a78c8"/>
+    <circle cx="12" cy="-2" r="1.4" fill="#3a78c8"/>
+  </g>
+
+  <!-- 모서리 점 -->
+  <circle cx="12" cy="12" r="1.4" fill="#e8b840"/>
+  <circle cx="88" cy="12" r="1.4" fill="#e8b840"/>
+  <circle cx="12" cy="148" r="1.4" fill="#e8b840"/>
+  <circle cx="88" cy="148" r="1.4" fill="#e8b840"/>
+</svg>

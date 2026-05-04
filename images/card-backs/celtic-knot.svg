@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ckg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2018"/>
+      <stop offset="1" stop-color="#06120c"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="160" fill="url(#ckg)"/>
+  <rect x="4" y="4" width="92" height="152" rx="4" fill="none" stroke="#c9a656" stroke-width="0.6"/>
+
+  <!-- 외곽 매듭 보더 — 상하 -->
+  <g stroke="#c9a656" stroke-width="0.8" fill="none" opacity="0.7">
+    <path d="M10 18 Q15 12 20 18 Q25 24 30 18 Q35 12 40 18 Q45 24 50 18 Q55 12 60 18 Q65 24 70 18 Q75 12 80 18 Q85 24 90 18"/>
+    <path d="M10 142 Q15 148 20 142 Q25 136 30 142 Q35 148 40 142 Q45 136 50 142 Q55 148 60 142 Q65 136 70 142 Q75 148 80 142 Q85 136 90 142"/>
+  </g>
+
+  <!-- 트리니티 매듭 (Triquetra) — 큰 -->
+  <g transform="translate(50, 80)" stroke="#c9a656" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle r="26" stroke-width="0.8" opacity="0.5"/>
+    <!-- 위 잎 -->
+    <path d="M0 -22 Q14 -10 0 6 Q-14 -10 0 -22 Z"/>
+    <!-- 좌하 잎 -->
+    <path d="M-19 11 Q-3 14 6 0 Q-9 -14 -19 11 Z"/>
+    <!-- 우하 잎 -->
+    <path d="M19 11 Q3 14 -6 0 Q9 -14 19 11 Z"/>
+    <!-- 중심 원 -->
+    <circle r="6" stroke-width="1.2"/>
+  </g>
+
+  <!-- 모서리 작은 매듭 -->
+  <g stroke="#c9a656" stroke-width="0.8" fill="none" opacity="0.6">
+    <circle cx="14" cy="36" r="3"/>
+    <circle cx="86" cy="36" r="3"/>
+    <circle cx="14" cy="124" r="3"/>
+    <circle cx="86" cy="124" r="3"/>
+  </g>
+</svg>
