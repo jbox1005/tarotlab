@@ -64,7 +64,11 @@
     { "id": "celtic-knot",   "name": "켈틱 매듭",   "stage": 1, "price": 1500 },
     { "id": "zodiac-wheel",  "name": "황도 12궁",   "stage": 1, "price": 1500 },
     { "id": "moon-cycle",    "name": "달의 위상",   "stage": 1, "price": 1500 },
-    { "id": "kabbalah-tree", "name": "생명나무",    "stage": 1, "price": 1500 }
+    { "id": "kabbalah-tree", "name": "생명나무",    "stage": 1, "price": 1500 },
+
+    { "id": "phoenix",     "name": "불사조",   "stage": 1, "price": 1500 },
+    { "id": "owl-wings",   "name": "부엉이",   "stage": 1, "price": 1500 },
+    { "id": "dragonfly",   "name": "잠자리",   "stage": 1, "price": 1500 }
   ],
   "PATTERNS": [
     { "id": "none",          "name": "없음",        "group": "basic",   "free": true, "price": 0 },
