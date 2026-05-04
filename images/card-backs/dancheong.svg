@@ -1,62 +1,209 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" preserveAspectRatio="xMidYMid slice">
   <defs>
-    <linearGradient id="dcg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1a0e08"/>
-      <stop offset="1" stop-color="#0e0604"/>
+    <!-- 한국 단청 오방색 -->
+    <!-- 적: 진사(辰砂) 주홍, 청: 군청(群青), 황: 자황(雌黃), 녹: 양록(洋緑), 흑: 송연묵, 백: 호분 -->
+
+    <linearGradient id="dcBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#180a06"/>
+      <stop offset="1" stop-color="#0a0402"/>
     </linearGradient>
-    <pattern id="dcp" width="14" height="14" patternUnits="userSpaceOnUse">
-      <circle cx="7" cy="7" r="0.6" fill="#e8b840" opacity="0.18"/>
+
+    <!-- 연주문(連珠紋) — 구슬 띠 패턴 -->
+    <pattern id="yeonju" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.4" fill="#e8b840"/>
+      <circle cx="3" cy="3" r="0.5" fill="#180a06"/>
     </pattern>
+
+    <!-- 회문(回紋) — 그리스 메안더와 유사한 ㅁ자 연속 -->
+    <pattern id="hoemun" x="0" y="0" width="10" height="6" patternUnits="userSpaceOnUse">
+      <path d="M0 5 L0 1 L4 1 L4 4 L7 4 L7 1 L10 1 L10 5 Z" fill="none" stroke="#e8b840" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- 보상화(寶相華) 꽃잎 — 머리초 중앙 화문 -->
+    <symbol id="petal" viewBox="-10 -16 20 16">
+      <path d="M0 0 Q-7 -4 -8 -10 Q-5 -16 0 -16 Q5 -16 8 -10 Q7 -4 0 0 Z"
+            fill="currentColor" stroke="#1a0e08" stroke-width="0.4"/>
+    </symbol>
+
+    <symbol id="petal-inner" viewBox="-6 -10 12 10">
+      <path d="M0 0 Q-4 -3 -5 -7 Q-3 -10 0 -10 Q3 -10 5 -7 Q4 -3 0 0 Z"
+            fill="currentColor"/>
+    </symbol>
   </defs>
-  <rect width="100" height="160" fill="url(#dcg)"/>
-  <rect x="3" y="3" width="94" height="154" rx="4" fill="none" stroke="#c83e3e" stroke-width="1.2"/>
-  <rect x="6" y="6" width="88" height="148" rx="3" fill="none" stroke="#e8b840" stroke-width="0.6"/>
-  <rect x="8" y="8" width="84" height="144" rx="2" fill="url(#dcp)"/>
 
-  <!-- 단청 머리초 — 상단 -->
-  <g transform="translate(50, 22)">
-    <path d="M-22 0 Q-22 -10 -10 -10 Q0 -10 0 0 Q0 -10 10 -10 Q22 -10 22 0 L22 6 L-22 6 Z" fill="#c83e3e" opacity="0.85"/>
-    <path d="M-18 -4 Q-12 -8 -6 -4 Q0 0 6 -4 Q12 -8 18 -4" fill="none" stroke="#e8b840" stroke-width="0.8"/>
-    <circle cx="0" cy="-2" r="2" fill="#e8b840"/>
-    <circle cx="-12" cy="-2" r="1.4" fill="#3a78c8"/>
-    <circle cx="12" cy="-2" r="1.4" fill="#3a78c8"/>
+  <!-- 베이스 -->
+  <rect width="100" height="160" fill="url(#dcBg)"/>
+
+  <!-- 외곽 검정 테두리 + 연주문 -->
+  <rect x="2" y="2" width="96" height="156" rx="2" fill="none" stroke="#08040a" stroke-width="1.4"/>
+  <rect x="4.5" y="4.5" width="91" height="151" rx="1.5" fill="none" stroke="#e8b840" stroke-width="0.6"/>
+  <!-- 연주문 띠 (상하) -->
+  <rect x="5.5" y="5.5" width="89" height="3" fill="url(#yeonju)" opacity="0.85"/>
+  <rect x="5.5" y="151.5" width="89" height="3" fill="url(#yeonju)" opacity="0.85"/>
+  <!-- 회문 띠 (좌우) -->
+  <rect x="5.5" y="9" width="3" height="142" fill="url(#hoemun)" opacity="0.7" transform="rotate(90 7 9)"/>
+
+  <!-- 내부 외곽선 — 적+청 이중선 -->
+  <rect x="9" y="11" width="82" height="138" rx="1" fill="none" stroke="#c83232" stroke-width="0.9"/>
+  <rect x="10.5" y="12.5" width="79" height="135" rx="0.8" fill="none" stroke="#2848a8" stroke-width="0.7"/>
+  <rect x="11.5" y="13.5" width="77" height="133" rx="0.6" fill="none" stroke="#e8b840" stroke-width="0.4"/>
+
+  <!-- ===== 상단 머리초 ===== -->
+  <g transform="translate(50, 28)">
+    <!-- 머리초 외곽 — 주홍 부채꼴 베이스 -->
+    <path d="M-30 -8 Q-30 -14 -22 -14 L22 -14 Q30 -14 30 -8 L30 8 L-30 8 Z"
+          fill="#c83232" stroke="#1a0e08" stroke-width="0.5"/>
+    <!-- 연꽃잎 5장 (적+황 교차) — 위로 향함 -->
+    <g transform="translate(0, 4)">
+      <g color="#2848a8"><use href="#petal" x="-22" y="-2" width="14" height="11"/></g>
+      <g color="#e8b840"><use href="#petal" x="-12" y="-4" width="12" height="10"/></g>
+      <g color="#e8e0c0"><use href="#petal" x="-3" y="-5" width="6" height="10"/></g>
+      <g color="#e8b840"><use href="#petal" x="0" y="-4" width="12" height="10"/></g>
+      <g color="#2848a8"><use href="#petal" x="8" y="-2" width="14" height="11"/></g>
+    </g>
+    <!-- 골미리 — 작은 끊긴 호 -->
+    <g fill="none" stroke="#e8b840" stroke-width="0.5">
+      <path d="M-26 6 Q-22 1 -18 6"/>
+      <path d="M-18 6 Q-14 1 -10 6"/>
+      <path d="M-10 6 Q-6 1 -2 6"/>
+      <path d="M-2 6 Q2 1 6 6"/>
+      <path d="M6 6 Q10 1 14 6"/>
+      <path d="M14 6 Q18 1 22 6"/>
+      <path d="M22 6 Q26 1 26 6"/>
+    </g>
+    <!-- 작은 원점 -->
+    <g fill="#3a8848"><circle cx="-22" cy="3" r="0.7"/><circle cx="22" cy="3" r="0.7"/></g>
   </g>
 
-  <!-- 중앙 연꽃 머리초 -->
+  <!-- ===== 중앙 보상화(寶相華) 메달 ===== -->
   <g transform="translate(50, 80)">
-    <!-- 외곽 원 -->
-    <circle r="26" fill="none" stroke="#e8b840" stroke-width="0.6"/>
-    <circle r="22" fill="none" stroke="#c83e3e" stroke-width="0.4"/>
-    <!-- 연잎 8개 -->
-    <g fill="#c83e3e" opacity="0.85">
-      <ellipse cx="0" cy="-18" rx="4" ry="9"/>
-      <ellipse cx="0" cy="18" rx="4" ry="9"/>
-      <ellipse cx="-18" cy="0" rx="9" ry="4"/>
-      <ellipse cx="18" cy="0" rx="9" ry="4"/>
+    <!-- 외곽 동심원 -->
+    <circle r="32" fill="none" stroke="#e8b840" stroke-width="0.4" opacity="0.45"/>
+    <circle r="28" fill="none" stroke="#c83232" stroke-width="0.5"/>
+    <circle r="25" fill="none" stroke="#2848a8" stroke-width="0.5"/>
+
+    <!-- 8잎 외화 (보라/청) -->
+    <g>
+      <g color="#2848a8" opacity="0.95">
+        <use href="#petal" x="-6" y="-26" width="12" height="13"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(45)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(90)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(135)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(180)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(225)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(270)"/>
+        <use href="#petal" x="-6" y="-26" width="12" height="13" transform="rotate(315)"/>
+      </g>
     </g>
-    <g fill="#3a78c8" opacity="0.75" transform="rotate(45)">
-      <ellipse cx="0" cy="-18" rx="3.5" ry="8"/>
-      <ellipse cx="0" cy="18" rx="3.5" ry="8"/>
-      <ellipse cx="-18" cy="0" rx="8" ry="3.5"/>
-      <ellipse cx="18" cy="0" rx="8" ry="3.5"/>
+
+    <!-- 8잎 내화 (적/황) — 외화 사이 회전 -->
+    <g transform="rotate(22.5)">
+      <g color="#c83232">
+        <use href="#petal" x="-5" y="-22" width="10" height="11"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(90)"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(180)"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(270)"/>
+      </g>
+      <g color="#e8b840">
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(45)"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(135)"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(225)"/>
+        <use href="#petal" x="-5" y="-22" width="10" height="11" transform="rotate(315)"/>
+      </g>
     </g>
-    <!-- 중앙 -->
-    <circle r="5" fill="#e8b840"/>
-    <circle r="2" fill="#1a0e08"/>
+
+    <!-- 중앙 화심 -->
+    <circle r="10" fill="#1a0e08" stroke="#e8b840" stroke-width="0.6"/>
+    <circle r="10" fill="#c83232" opacity="0.4"/>
+
+    <!-- 중심 8잎 작은 화문 (백+황) -->
+    <g color="#e8e0c0">
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(90)"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(180)"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(270)"/>
+    </g>
+    <g color="#e8b840" transform="rotate(45)">
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(90)"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(180)"/>
+      <use href="#petal-inner" x="-3" y="-9" width="6" height="6" transform="rotate(270)"/>
+    </g>
+
+    <!-- 화심 중심점 -->
+    <circle r="2.4" fill="#e8b840"/>
+    <circle r="0.8" fill="#1a0e08"/>
+
+    <!-- 연주문 동심 띠 -->
+    <g fill="#e8b840">
+      <circle cx="0" cy="-25" r="0.7"/><circle cx="0" cy="25" r="0.7"/>
+      <circle cx="-25" cy="0" r="0.7"/><circle cx="25" cy="0" r="0.7"/>
+      <circle cx="-17.7" cy="-17.7" r="0.6"/><circle cx="17.7" cy="-17.7" r="0.6"/>
+      <circle cx="-17.7" cy="17.7" r="0.6"/><circle cx="17.7" cy="17.7" r="0.6"/>
+    </g>
   </g>
 
-  <!-- 단청 머리초 — 하단 -->
-  <g transform="translate(50, 138) rotate(180)">
-    <path d="M-22 0 Q-22 -10 -10 -10 Q0 -10 0 0 Q0 -10 10 -10 Q22 -10 22 0 L22 6 L-22 6 Z" fill="#c83e3e" opacity="0.85"/>
-    <path d="M-18 -4 Q-12 -8 -6 -4 Q0 0 6 -4 Q12 -8 18 -4" fill="none" stroke="#e8b840" stroke-width="0.8"/>
-    <circle cx="0" cy="-2" r="2" fill="#e8b840"/>
-    <circle cx="-12" cy="-2" r="1.4" fill="#3a78c8"/>
-    <circle cx="12" cy="-2" r="1.4" fill="#3a78c8"/>
+  <!-- ===== 하단 머리초 (좌우 대칭, 상하 반전) ===== -->
+  <g transform="translate(50, 132) scale(1, -1)">
+    <path d="M-30 -8 Q-30 -14 -22 -14 L22 -14 Q30 -14 30 -8 L30 8 L-30 8 Z"
+          fill="#c83232" stroke="#1a0e08" stroke-width="0.5"/>
+    <g transform="translate(0, 4)">
+      <g color="#2848a8"><use href="#petal" x="-22" y="-2" width="14" height="11"/></g>
+      <g color="#e8b840"><use href="#petal" x="-12" y="-4" width="12" height="10"/></g>
+      <g color="#e8e0c0"><use href="#petal" x="-3" y="-5" width="6" height="10"/></g>
+      <g color="#e8b840"><use href="#petal" x="0" y="-4" width="12" height="10"/></g>
+      <g color="#2848a8"><use href="#petal" x="8" y="-2" width="14" height="11"/></g>
+    </g>
+    <g fill="none" stroke="#e8b840" stroke-width="0.5">
+      <path d="M-26 6 Q-22 1 -18 6"/>
+      <path d="M-18 6 Q-14 1 -10 6"/>
+      <path d="M-10 6 Q-6 1 -2 6"/>
+      <path d="M-2 6 Q2 1 6 6"/>
+      <path d="M6 6 Q10 1 14 6"/>
+      <path d="M14 6 Q18 1 22 6"/>
+      <path d="M22 6 Q26 1 26 6"/>
+    </g>
+    <g fill="#3a8848"><circle cx="-22" cy="3" r="0.7"/><circle cx="22" cy="3" r="0.7"/></g>
   </g>
 
-  <!-- 모서리 점 -->
-  <circle cx="12" cy="12" r="1.4" fill="#e8b840"/>
-  <circle cx="88" cy="12" r="1.4" fill="#e8b840"/>
-  <circle cx="12" cy="148" r="1.4" fill="#e8b840"/>
-  <circle cx="88" cy="148" r="1.4" fill="#e8b840"/>
+  <!-- ===== 모서리 완자(卍) 장식 ===== -->
+  <g stroke="#e8b840" stroke-width="0.7" fill="none" stroke-linecap="round">
+    <!-- 좌상 -->
+    <g transform="translate(13, 18)">
+      <path d="M-3 0 L0 0 L0 -3 M0 0 L3 0 L3 3 M0 0 L0 3 L-3 3 M0 0 L-3 0 L-3 -3"/>
+    </g>
+    <g transform="translate(87, 18)">
+      <path d="M-3 0 L0 0 L0 -3 M0 0 L3 0 L3 3 M0 0 L0 3 L-3 3 M0 0 L-3 0 L-3 -3"/>
+    </g>
+    <g transform="translate(13, 142)">
+      <path d="M-3 0 L0 0 L0 -3 M0 0 L3 0 L3 3 M0 0 L0 3 L-3 3 M0 0 L-3 0 L-3 -3"/>
+    </g>
+    <g transform="translate(87, 142)">
+      <path d="M-3 0 L0 0 L0 -3 M0 0 L3 0 L3 3 M0 0 L0 3 L-3 3 M0 0 L-3 0 L-3 -3"/>
+    </g>
+  </g>
+
+  <!-- 좌우 작은 별꽃 -->
+  <g fill="#e8b840" opacity="0.85">
+    <g transform="translate(15, 80)">
+      <circle r="1.4"/><circle r="0.5" fill="#1a0e08"/>
+    </g>
+    <g transform="translate(85, 80)">
+      <circle r="1.4"/><circle r="0.5" fill="#1a0e08"/>
+    </g>
+  </g>
+
+  <!-- 좌우 측면 작은 머리초 -->
+  <g transform="translate(15, 60)" stroke="#c83232" stroke-width="0.5" fill="none">
+    <path d="M-3 0 Q-3 -3 0 -3 Q3 -3 3 0 Q3 3 0 3 Q-3 3 -3 0 Z" fill="#2848a8" opacity="0.7"/>
+  </g>
+  <g transform="translate(85, 60)" stroke="#c83232" stroke-width="0.5" fill="none">
+    <path d="M-3 0 Q-3 -3 0 -3 Q3 -3 3 0 Q3 3 0 3 Q-3 3 -3 0 Z" fill="#2848a8" opacity="0.7"/>
+  </g>
+  <g transform="translate(15, 100)" stroke="#c83232" stroke-width="0.5" fill="none">
+    <path d="M-3 0 Q-3 -3 0 -3 Q3 -3 3 0 Q3 3 0 3 Q-3 3 -3 0 Z" fill="#2848a8" opacity="0.7"/>
+  </g>
+  <g transform="translate(85, 100)" stroke="#c83232" stroke-width="0.5" fill="none">
+    <path d="M-3 0 Q-3 -3 0 -3 Q3 -3 3 0 Q3 3 0 3 Q-3 3 -3 0 Z" fill="#2848a8" opacity="0.7"/>
+  </g>
 </svg>
