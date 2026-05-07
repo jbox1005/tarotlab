@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-07T10:33:31.972Z",
+  "updatedAt": "2026-05-07T10:41:31.031Z",
   "notices": [
     {
       "id": "2026-05-07-1hcz",
@@ -30,10 +30,10 @@
         "type": "store",
         "label": {
           "ko": "앱 업데이트",
-          "en": "",
-          "ja": "",
-          "zh-TW": "",
-          "zh-CN": ""
+          "en": "App Update",
+          "ja": "アプリ更新",
+          "zh-TW": "App 更新",
+          "zh-CN": "App 更新"
         },
         "iosUrl": "",
         "androidUrl": "",
