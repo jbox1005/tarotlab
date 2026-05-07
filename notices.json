@@ -1,7 +1,37 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-07T14:06:42.232Z",
+  "updatedAt": "2026-05-07T14:27:19.075Z",
   "notices": [
+    {
+      "id": "2026-05-07-678t",
+      "publishedAt": "2026-05-07T14:26:52.757Z",
+      "expiresAt": null,
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "versionFilter": {
+        "above": "v2.0",
+        "below": "v2.0"
+      },
+      "title": {
+        "ko": "v2.0",
+        "en": "v2.0",
+        "ja": "v2.0",
+        "zh-TW": "v2.0",
+        "zh-CN": "v2.0"
+      },
+      "body": {
+        "ko": "v2.0",
+        "en": "v2.0",
+        "ja": "v2.0",
+        "zh-TW": "v2.0",
+        "zh-CN": "v2.0"
+      },
+      "actionButton": null
+    },
     {
       "id": "2026-05-07-yy40",
       "publishedAt": "2026-05-07T12:38:55.975Z",
