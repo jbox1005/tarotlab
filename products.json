@@ -1,101 +1,637 @@
 {
-  "version": 2,
-  "updatedAt": "2026-04-25T00:00:00Z",
+  "version": 3,
+  "updatedAt": "2026-05-07T12:13:45.333Z",
   "schema": "stage:1=resource-only / 2=public(not for sale) / 3=for sale",
+  "features": {
+    "meditationMonetization": true
+  },
   "THEMES": [
-    { "id": "tarolab",  "name": "타로랩",  "swatches": ["#17213d", "#e8c520", "#f0d040"], "free": true, "price": 0 },
-    { "id": "amethyst", "name": "자수정",  "swatches": ["#1a1030", "#b78bd4", "#e4c574"], "free": true, "price": 0 },
-    { "id": "forest",   "name": "숲",      "swatches": ["#0d1d1a", "#4a9b6e", "#c9a656"], "free": true, "price": 0 },
-
-    { "id": "sapphire", "name": "사파이어",   "swatches": ["#101a33", "#6a8dff", "#9fc5ff"], "stage": 1, "price": 1900 },
-    { "id": "crimson",  "name": "진홍",       "swatches": ["#2a0a10", "#c94a5a", "#d4a847"], "stage": 1, "price": 1900 },
-    { "id": "obsidian", "name": "옵시디언",   "swatches": ["#15151a", "#d4af37", "#f5d57c"], "stage": 1, "price": 1900 },
-    { "id": "rose",     "name": "황혼의 장미","swatches": ["#251420", "#d47a9c", "#e8b478"], "stage": 1, "price": 1900 },
-    { "id": "parchment","name": "양피지",     "swatches": ["#fffaf0", "#7b3f99", "#b08530"], "stage": 1, "price": 1900 },
-
-    { "id": "night-garden",   "name": "밤의 정원",   "swatches": ["#0f2528", "#c8b4ff", "#d4d8e0"], "stage": 1, "price": 1900 },
-    { "id": "crystal-cave",   "name": "수정 동굴",   "swatches": ["#0c1a3a", "#5fc4e0", "#c8e8f4"], "stage": 1, "price": 1900 },
-    { "id": "flame-ritual",   "name": "불꽃 의식",   "swatches": ["#1f0808", "#e85d2e", "#ffd060"], "stage": 1, "price": 1900 },
-    { "id": "dark-parchment", "name": "고대 양피지", "swatches": ["#1a1208", "#a87538", "#d4b070"], "stage": 1, "price": 1900 },
-    { "id": "moonlit-mist",   "name": "달빛 안개",   "swatches": ["#1c2030", "#a098c8", "#e0d8f4"], "stage": 1, "price": 1900 },
-    { "id": "royal-purple",   "name": "금자색 왕좌", "swatches": ["#1a0c2a", "#9b6bd4", "#e8c060"], "stage": 1, "price": 1900 },
-    { "id": "aurora",         "name": "북극광",      "swatches": ["#080812", "#3ed0a8", "#d860c4"], "stage": 1, "price": 1900 },
-
-    { "id": "noir-gold",     "name": "누아르 골드", "swatches": ["#050505", "#d4af37", "#f0c860"], "stage": 1, "price": 1900 },
-    { "id": "burgundy-wine", "name": "버건디 와인", "swatches": ["#1a070c", "#b8585f", "#e8b478"], "stage": 1, "price": 1900 },
-    { "id": "sage-cottage",  "name": "세이지 코지", "swatches": ["#14180e", "#8aab78", "#e8d5a8"], "stage": 1, "price": 1900 },
-
-    { "id": "dancheong",       "name": "단청",          "swatches": ["#1a1410", "#c83e3e", "#e8b840"], "stage": 1, "price": 1900 },
-    { "id": "plum-moon",       "name": "매화 달밤",     "swatches": ["#161922", "#d88aa0", "#e0d4c0"], "stage": 1, "price": 1900 },
-    { "id": "winter-stardust", "name": "겨울 별바다",   "swatches": ["#0e1428", "#88b8e0", "#d8e4f4"], "stage": 1, "price": 1900 },
-    { "id": "autumn-harvest",  "name": "가을 추수",     "swatches": ["#200e0c", "#c87038", "#e8b048"], "stage": 1, "price": 1900 },
-    { "id": "deep-sea",        "name": "바다 심연",     "swatches": ["#0a1e2c", "#3eaab8", "#f48a78"], "stage": 1, "price": 1900 },
-    { "id": "cherry-dawn",     "name": "벚꽃 새벽",     "swatches": ["#fdf6f7", "#d870a0", "#c89858"], "stage": 1, "price": 1900 },
-    { "id": "emerald-garden",  "name": "에메랄드 정원", "swatches": ["#0a2014", "#4ea868", "#d8c068"], "stage": 1, "price": 1900 }
+    {
+      "id": "tarolab",
+      "name": "타로랩",
+      "swatches": [
+        "#17213d",
+        "#e8c520",
+        "#f0d040"
+      ],
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "amethyst",
+      "name": "자수정",
+      "swatches": [
+        "#1a1030",
+        "#b78bd4",
+        "#e4c574"
+      ],
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "forest",
+      "name": "숲",
+      "swatches": [
+        "#0d1d1a",
+        "#4a9b6e",
+        "#c9a656"
+      ],
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "sapphire",
+      "name": "사파이어",
+      "swatches": [
+        "#101a33",
+        "#6a8dff",
+        "#9fc5ff"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "crimson",
+      "name": "진홍",
+      "swatches": [
+        "#2a0a10",
+        "#c94a5a",
+        "#d4a847"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "obsidian",
+      "name": "옵시디언",
+      "swatches": [
+        "#15151a",
+        "#d4af37",
+        "#f5d57c"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "rose",
+      "name": "황혼의 장미",
+      "swatches": [
+        "#251420",
+        "#d47a9c",
+        "#e8b478"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "parchment",
+      "name": "양피지",
+      "swatches": [
+        "#fffaf0",
+        "#7b3f99",
+        "#b08530"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "night-garden",
+      "name": "밤의 정원",
+      "swatches": [
+        "#0f2528",
+        "#c8b4ff",
+        "#d4d8e0"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "crystal-cave",
+      "name": "수정 동굴",
+      "swatches": [
+        "#0c1a3a",
+        "#5fc4e0",
+        "#c8e8f4"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "flame-ritual",
+      "name": "불꽃 의식",
+      "swatches": [
+        "#1f0808",
+        "#e85d2e",
+        "#ffd060"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "dark-parchment",
+      "name": "고대 양피지",
+      "swatches": [
+        "#1a1208",
+        "#a87538",
+        "#d4b070"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "moonlit-mist",
+      "name": "달빛 안개",
+      "swatches": [
+        "#1c2030",
+        "#a098c8",
+        "#e0d8f4"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "royal-purple",
+      "name": "금자색 왕좌",
+      "swatches": [
+        "#1a0c2a",
+        "#9b6bd4",
+        "#e8c060"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "aurora",
+      "name": "북극광",
+      "swatches": [
+        "#080812",
+        "#3ed0a8",
+        "#d860c4"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "noir-gold",
+      "name": "누아르 골드",
+      "swatches": [
+        "#050505",
+        "#d4af37",
+        "#f0c860"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "burgundy-wine",
+      "name": "버건디 와인",
+      "swatches": [
+        "#1a070c",
+        "#b8585f",
+        "#e8b478"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "sage-cottage",
+      "name": "세이지 코지",
+      "swatches": [
+        "#14180e",
+        "#8aab78",
+        "#e8d5a8"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "dancheong",
+      "name": "단청",
+      "swatches": [
+        "#1a1410",
+        "#c83e3e",
+        "#e8b840"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "plum-moon",
+      "name": "매화 달밤",
+      "swatches": [
+        "#161922",
+        "#d88aa0",
+        "#e0d4c0"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "winter-stardust",
+      "name": "겨울 별바다",
+      "swatches": [
+        "#0e1428",
+        "#88b8e0",
+        "#d8e4f4"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "autumn-harvest",
+      "name": "가을 추수",
+      "swatches": [
+        "#200e0c",
+        "#c87038",
+        "#e8b048"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "deep-sea",
+      "name": "바다 심연",
+      "swatches": [
+        "#0a1e2c",
+        "#3eaab8",
+        "#f48a78"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "cherry-dawn",
+      "name": "벚꽃 새벽",
+      "swatches": [
+        "#fdf6f7",
+        "#d870a0",
+        "#c89858"
+      ],
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "emerald-garden",
+      "name": "에메랄드 정원",
+      "swatches": [
+        "#0a2014",
+        "#4ea868",
+        "#d8c068"
+      ],
+      "stage": 1,
+      "price": 1900
+    }
   ],
   "CARD_BACKS": [
-    { "id": "tarolab", "name": "타로랩",   "free": true, "price": 0 },
-    { "id": "classic", "name": "클래식",   "free": true, "price": 0 },
-    { "id": "emerald", "name": "에메랄드", "free": true, "price": 0 },
-
-    { "id": "starry",       "name": "별밤",          "stage": 1, "price": 1500 },
-    { "id": "geometric",    "name": "생명의 씨앗",   "stage": 1, "price": 1500 },
-    { "id": "simple",       "name": "심플",          "stage": 1, "price": 1500 },
-
-    { "id": "eye-of-sun",   "name": "태양의 눈",     "stage": 1, "price": 1500 },
-    { "id": "magic-circle", "name": "마법진",        "stage": 1, "price": 1500 },
-    { "id": "moon-stars",   "name": "달과 별",       "stage": 1, "price": 1500 },
-    { "id": "rose-window",  "name": "장미창",        "stage": 1, "price": 1500 },
-    { "id": "runes",        "name": "룬 문자",       "stage": 1, "price": 1500 },
-    { "id": "lotus",        "name": "연꽃",          "stage": 1, "price": 1500 },
-    { "id": "feathers",     "name": "천사의 깃털",   "stage": 1, "price": 1500 },
-    { "id": "spiral",       "name": "나선 미궁",     "stage": 1, "price": 1500 },
-    { "id": "aztec-sun",    "name": "아즈텍 태양석", "stage": 1, "price": 1500 },
-
-    { "id": "flower-of-life",    "name": "생명의 꽃",   "stage": 1, "price": 1500 },
-    { "id": "compass-rose",      "name": "컴퍼스 로즈", "stage": 1, "price": 1500 },
-    { "id": "mandala",           "name": "만달라",      "stage": 1, "price": 1500 },
-    { "id": "constellation-map", "name": "별자리 지도", "stage": 1, "price": 1500 },
-    { "id": "eye-of-horus",      "name": "호루스의 눈", "stage": 1, "price": 1500 },
-    { "id": "damask",            "name": "다마스크",    "stage": 1, "price": 1500 },
-
-    { "id": "plum-blossom",  "name": "매화 달밤",   "stage": 1, "price": 1500 },
-    { "id": "bagua",         "name": "주역 팔괘",   "stage": 1, "price": 1500 },
-    { "id": "celtic-knot",   "name": "켈틱 매듭",   "stage": 1, "price": 1500 },
-    { "id": "zodiac-wheel",  "name": "황도 12궁",   "stage": 1, "price": 1500 },
-    { "id": "moon-cycle",    "name": "달의 위상",   "stage": 1, "price": 1500 },
-    { "id": "kabbalah-tree", "name": "생명나무",    "stage": 1, "price": 1500 },
-
-    { "id": "phoenix",     "name": "불사조",   "stage": 1, "price": 1500 },
-    { "id": "owl-wings",   "name": "부엉이",   "stage": 1, "price": 1500 },
-    { "id": "dragonfly",   "name": "잠자리",   "stage": 1, "price": 1500 }
+    {
+      "id": "tarolab",
+      "name": "타로랩",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "classic",
+      "name": "클래식",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "emerald",
+      "name": "에메랄드",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "starry",
+      "name": "별밤",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "geometric",
+      "name": "생명의 씨앗",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "simple",
+      "name": "심플",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "eye-of-sun",
+      "name": "태양의 눈",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "magic-circle",
+      "name": "마법진",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "moon-stars",
+      "name": "달과 별",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "rose-window",
+      "name": "장미창",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "runes",
+      "name": "룬 문자",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "lotus",
+      "name": "연꽃",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "feathers",
+      "name": "천사의 깃털",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "spiral",
+      "name": "나선 미궁",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "aztec-sun",
+      "name": "아즈텍 태양석",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "flower-of-life",
+      "name": "생명의 꽃",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "compass-rose",
+      "name": "컴퍼스 로즈",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "mandala",
+      "name": "만달라",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "constellation-map",
+      "name": "별자리 지도",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "eye-of-horus",
+      "name": "호루스의 눈",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "damask",
+      "name": "다마스크",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "plum-blossom",
+      "name": "매화 달밤",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "bagua",
+      "name": "주역 팔괘",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "celtic-knot",
+      "name": "켈틱 매듭",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "zodiac-wheel",
+      "name": "황도 12궁",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "moon-cycle",
+      "name": "달의 위상",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "kabbalah-tree",
+      "name": "생명나무",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "phoenix",
+      "name": "불사조",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "owl-wings",
+      "name": "부엉이",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "dragonfly",
+      "name": "잠자리",
+      "stage": 1,
+      "price": 1500
+    }
   ],
   "PATTERNS": [
-    { "id": "none",          "name": "없음",        "group": "basic",   "free": true, "price": 0 },
-
-    { "id": "dots",          "name": "도트",        "group": "pattern", "free": true, "price": 0 },
-    { "id": "grid",          "name": "격자",        "group": "pattern", "free": true, "price": 0 },
-    { "id": "dots-large",    "name": "큰 도트",     "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "twinkle",       "name": "별빛",        "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "constellation", "name": "별자리",      "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "moon",          "name": "초승달",      "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "diamond",       "name": "다이아몬드",  "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "hexagon",       "name": "벌집",        "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "triangles",     "name": "삼각 만화경", "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "ripple",        "name": "동심원",      "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "herringbone",   "name": "헤링본",      "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "runes",         "name": "룬 문자",     "group": "pattern", "stage": 1, "price": 1500 },
-    { "id": "cross",         "name": "십자",        "group": "pattern", "stage": 1, "price": 1500 },
-
-    { "id": "aurora",        "name": "오로라",      "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "nebula",        "name": "성운",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "eclipse",       "name": "일식",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "galaxy",        "name": "은하수",      "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "fog",           "name": "안개",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "sacred-circle", "name": "성원",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "twilight",      "name": "여명",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "prism",         "name": "프리즘",      "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "abyss",         "name": "심연",        "group": "mood", "stage": 1, "price": 1900 },
-    { "id": "binary-star",   "name": "쌍성",        "group": "mood", "stage": 1, "price": 1900 }
+    {
+      "id": "none",
+      "name": "없음",
+      "group": "basic",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "dots",
+      "name": "도트",
+      "group": "pattern",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "grid",
+      "name": "격자",
+      "group": "pattern",
+      "free": true,
+      "price": 0
+    },
+    {
+      "id": "dots-large",
+      "name": "큰 도트",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "twinkle",
+      "name": "별빛",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "constellation",
+      "name": "별자리",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "moon",
+      "name": "초승달",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "diamond",
+      "name": "다이아몬드",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "hexagon",
+      "name": "벌집",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "triangles",
+      "name": "삼각 만화경",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "ripple",
+      "name": "동심원",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "herringbone",
+      "name": "헤링본",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "runes",
+      "name": "룬 문자",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "cross",
+      "name": "십자",
+      "group": "pattern",
+      "stage": 1,
+      "price": 1500
+    },
+    {
+      "id": "aurora",
+      "name": "오로라",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "nebula",
+      "name": "성운",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "eclipse",
+      "name": "일식",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "galaxy",
+      "name": "은하수",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "fog",
+      "name": "안개",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "sacred-circle",
+      "name": "성원",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "twilight",
+      "name": "여명",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "prism",
+      "name": "프리즘",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "abyss",
+      "name": "심연",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    },
+    {
+      "id": "binary-star",
+      "name": "쌍성",
+      "group": "mood",
+      "stage": 1,
+      "price": 1900
+    }
   ]
 }
