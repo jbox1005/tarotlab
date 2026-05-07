@@ -1,7 +1,48 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-07T11:20:18.874Z",
+  "updatedAt": "2026-05-07T12:39:43.990Z",
   "notices": [
+    {
+      "id": "2026-05-07-yy40",
+      "publishedAt": "2026-05-07T12:38:55.975Z",
+      "expiresAt": null,
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "versionFilter": null,
+      "title": {
+        "ko": "v1.4업데이트 출시",
+        "en": "v1.4 Update Released!",
+        "ja": "v1.4アップデートリリース！",
+        "zh-TW": "v1.4更新推出！",
+        "zh-CN": "v1.4更新发布！"
+      },
+      "body": {
+        "ko": "내용 없음",
+        "en": "No content",
+        "ja": "内容なし",
+        "zh-TW": "無內容",
+        "zh-CN": "无内容"
+      },
+      "actionButton": {
+        "type": "store",
+        "label": {
+          "ko": "앱 업데이트",
+          "en": "App Update",
+          "ja": "アプリのアップデート",
+          "zh-TW": "應用程式更新",
+          "zh-CN": "应用更新"
+        },
+        "iosUrl": "",
+        "androidUrl": "",
+        "webUrl": null,
+        "url": "",
+        "internalPath": ""
+      }
+    },
     {
       "id": "2026-05-07-pf3p",
       "publishedAt": "2026-05-07T10:58:47.215Z",
