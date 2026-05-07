@@ -1,9 +1,9 @@
 {
-  "version": 3,
-  "updatedAt": "2026-05-07T12:13:45.333Z",
+  "version": 5,
+  "updatedAt": "2026-05-07T12:27:31.792Z",
   "schema": "stage:1=resource-only / 2=public(not for sale) / 3=for sale",
   "features": {
-    "meditationMonetization": true
+    "meditationMonetization": false
   },
   "THEMES": [
     {
