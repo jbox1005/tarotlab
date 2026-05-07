@@ -1,5 +1,46 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T00:00:00+09:00",
-  "notices": []
+  "updatedAt": "2026-05-07T10:33:31.972Z",
+  "notices": [
+    {
+      "id": "2026-05-07-1hcz",
+      "publishedAt": "2026-05-07T10:31:00.421Z",
+      "expiresAt": "2026-05-08T00:00:00.000Z",
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "title": {
+        "ko": "v1.2업데이트 출시",
+        "en": "v1.2 Update Released",
+        "ja": "v1.2アップデートリリース",
+        "zh-TW": "v1.2 更新推出",
+        "zh-CN": "v1.2 更新发布"
+      },
+      "body": {
+        "ko": "명상기능 추가\n달의의식 추가\n테마 2종 추가",
+        "en": "New meditation feature\nNew Moon Ritual\n2 new themes",
+        "ja": "瞑想機能を追加\n月の儀式を追加\n新テーマ2種を追加",
+        "zh-TW": "新增冥想功能\n新增月之儀式\n新增2種主題",
+        "zh-CN": "新增冥想功能\n新增月之仪式\n新增2种主题"
+      },
+      "actionButton": {
+        "type": "store",
+        "label": {
+          "ko": "앱 업데이트",
+          "en": "",
+          "ja": "",
+          "zh-TW": "",
+          "zh-CN": ""
+        },
+        "iosUrl": "",
+        "androidUrl": "",
+        "webUrl": null,
+        "url": "",
+        "internalPath": ""
+      }
+    }
+  ]
 }
