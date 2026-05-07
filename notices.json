@@ -1,7 +1,34 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-07T10:51:41.880Z",
+  "updatedAt": "2026-05-07T10:59:22.130Z",
   "notices": [
+    {
+      "id": "2026-05-07-pf3p",
+      "publishedAt": "2026-05-07T10:58:47.215Z",
+      "expiresAt": null,
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "versionFilter": null,
+      "title": {
+        "ko": "ㄴㅇㅁㄻㄴ",
+        "en": "Hello!",
+        "ja": "こんにちは！",
+        "zh-TW": "哈囉！",
+        "zh-CN": "哈喽！"
+      },
+      "body": {
+        "ko": "",
+        "en": "",
+        "ja": "",
+        "zh-TW": "",
+        "zh-CN": ""
+      },
+      "actionButton": null
+    },
     {
       "id": "2026-05-07-uv95",
       "publishedAt": "2026-05-07T10:45:45.434Z",
