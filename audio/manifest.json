@@ -1,0 +1,43 @@
+{
+  "bgm": [
+    {
+      "id": "am7-ambient",
+      "file": "bgm/am7-ambient.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    },
+    {
+      "id": "dm7-melancholy",
+      "file": "bgm/dm7-melancholy.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    },
+    {
+      "id": "em-mystery",
+      "file": "bgm/em-mystery.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    },
+    {
+      "id": "cmaj7-peace",
+      "file": "bgm/cmaj7-peace.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    },
+    {
+      "id": "deep-cave",
+      "file": "bgm/deep-cave.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    },
+    {
+      "id": "starry-night",
+      "file": "bgm/starry-night.mp3",
+      "size": 1100640,
+      "loopSec": 55
+    }
+  ],
+  "sfx": [],
+  "bakedAt": "2026-05-12T02:26:26.281Z",
+  "mode": "bgm"
+}
