@@ -1,5 +1,47 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T00:00:00+09:00",
-  "notices": []
+  "updatedAt": "2026-05-28T06:09:21.404Z",
+  "notices": [
+    {
+      "id": "2026-05-28-5qmk",
+      "publishedAt": "2026-05-28T03:03:57.999Z",
+      "expiresAt": null,
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "versionFilter": null,
+      "title": {
+        "ko": "v1.1.6 업데이트 출시",
+        "en": "v1.1.6 Update Released",
+        "ja": "v1.1.6 アップデートをリリースしました",
+        "zh-TW": "v1.1.6 更新已推出",
+        "zh-CN": "v1.1.6 更新已发布"
+      },
+      "body": {
+        "ko": "[마이너 버그 수정]\n- 카드 이미지 비활성 문제 개선",
+        "en": "[Minor Bug Fixes]\n- Improved card image display",
+        "ja": "[軽微なバグ修正]\n- カード画像の表示不具合を修正しました",
+        "zh-TW": "[輕微錯誤修正]\n- 修正卡片圖片無法顯示的問題",
+        "zh-CN": "[轻微错误修正]\n- 修复卡片图片无法显示的问题"
+      },
+      "actionButton": {
+        "type": "store",
+        "label": {
+          "ko": "업데이트",
+          "en": "Update",
+          "ja": "アップデート",
+          "zh-TW": "更新",
+          "zh-CN": "更新"
+        },
+        "iosUrl": "",
+        "androidUrl": "https://play.google.com/store/apps/details?id=com.tarolab.app",
+        "webUrl": null,
+        "url": "",
+        "internalPath": ""
+      }
+    }
+  ]
 }
