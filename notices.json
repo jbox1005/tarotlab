@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-28T06:09:21.404Z",
+  "updatedAt": "2026-05-29T07:58:33.898Z",
   "notices": [
     {
       "id": "2026-05-28-5qmk",
@@ -38,6 +38,50 @@
         },
         "iosUrl": "",
         "androidUrl": "https://play.google.com/store/apps/details?id=com.tarolab.app",
+        "webUrl": null,
+        "url": "",
+        "internalPath": ""
+      }
+    },
+    {
+      "id": "2026-05-29-koi5",
+      "publishedAt": "2026-05-29T07:44:36.984Z",
+      "expiresAt": null,
+      "priority": "normal",
+      "platforms": [
+        "ios",
+        "android",
+        "pwa"
+      ],
+      "versionFilter": {
+        "above": "",
+        "below": ""
+      },
+      "title": {
+        "ko": "v1.1.7 업데이트 출시",
+        "en": "v1.1.7 Update Released",
+        "ja": "v1.1.7 アップデートリリース",
+        "zh-TW": "v1.1.7 更新已推出",
+        "zh-CN": "v1.1.7 更新已上线"
+      },
+      "body": {
+        "ko": "카드 이미지 개선\n1) RWS 카드 이미지 교체\n  - 카드 테두리 정비 및 용량 최적화\n2) 카드 이미지 모아레(간섭패턴) 현상 개선",
+        "en": "Card Image Improvements\n1) RWS Card Image Update\n  - Card border refinement and size optimization\n2) Improved moiré (interference pattern) effect on card images",
+        "ja": "カード画像改善\n1) RWSカード画像を更新\n  - カードの縁を調整し、容量を最適化\n2) カード画像のモアレ（干渉パターン）現象を改善",
+        "zh-TW": "卡片圖片優化\n1) 更新RWS卡片圖片\n  - 調整卡片邊框並最佳化檔案大小\n2) 改善卡片圖片的莫爾條紋（干涉圖案）現象",
+        "zh-CN": "卡片图片优化\n1) 更新RWS卡片图片\n  - 调整卡片边框并优化文件大小\n2) 改善卡片图片的莫尔纹（干涉图案）现象"
+      },
+      "actionButton": {
+        "type": "store",
+        "label": {
+          "ko": "앱 업데이트",
+          "en": "Update",
+          "ja": "アップデート",
+          "zh-TW": "更新",
+          "zh-CN": "更新"
+        },
+        "iosUrl": "",
+        "androidUrl": "",
         "webUrl": null,
         "url": "",
         "internalPath": ""
